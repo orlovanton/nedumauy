@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+	<title>NEDUMAYU</title>
+	<meta name="viewport" content="width=device-width, inial scale=1">
+	<link rel="stylesheet" href="lib/bootstrap-3.3.5-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="lib/lightbox/css/screen.css">
+    <link rel="stylesheet" href="lib/lightbox/css/lightbox.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-1">
+			<div class="nav" id="home-link">home</div>
+			<div class="nav" id="art-link">arts</div>
+			<div class="nav" id="art-music">music</div>
+			<div class="nav" id="about-link">about</div>
+		</div>
+		<div class="col-xs-11">
+			<div class="row">
+				<div class="col-xs-12 logo-wrapper">
+					<div class="logo" id="logo"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12" id="main-container">
+			    <div class="about">
+				<h2>Что такое NEDUMAYU?</h2>
+				<p>Это сайт о творчестве. О рисунках и музыке. Когда я рисую или играю, я не думаю.
+</p>
+				<p>Здесь я собрала свои работы, чтобы немного рассказать о себе. Как оказалось, другим нравятся мои картины. И мне от этого хорошо.
+</p>
+				<p>Я взяла название NEDUMAYU, просто чтобы поменьше думать. Я надеялась, что искусство поможет мне остановить поток мыслей. Пока не помогает.  Но я не хочу об этом думать.</p><br>
+				<img src="img022.jpg">
+				</div> 
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div class="row">
+			<div class="footer col-xs-12 text-center">alice surg. 2016</div>
+			</div>
+</div>	
+<script src="lib/jquery-2.2.0.js"></script>
+<script>
+    $("#logo, #home-link").on("click", function () {
+       $("#main-container").load("home.html");
+    });
+	
+    $("#art-link").on("click", function () {
+       $("#main-container").load("gallery2.html");
+    });
+	
+	$("#about-link").on("click", function () {
+       $("#main-container").load("about2.html");
+    });
+	
+	$("#art-music").on("click", function () {
+       $("#main-container").load("music2.html");
+    });
+</script>
+</body>
+</html>

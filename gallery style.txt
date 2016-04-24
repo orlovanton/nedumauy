@@ -1,0 +1,32 @@
+	.gallery a{
+	display: block;
+	height: 300px;
+	background-color: rgba(0,0,0,0.1);
+	border: 7px solid rgba(0,0,0,0.0);
+}
+
+	 .gallery img{
+	width: 300px;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+	}
+	
+
+
+
+
+	.gallery a{
+	display: block;
+	height: 300px;
+	
+}
+
+	 .gallery img{
+	width: 300px;
+    margin: 40px auto;
+    display: block;
+     
+	border: 20px solid rgba(0,0,0,0.3);
+	border-radius: 10px;
+	}
