@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>NEDUMAYU</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     <link rel="stylesheet" href="lib/bootstrap-3.3.5-dist/css/bootstrap.css">
     <link rel="stylesheet" href="lib/lightbox/css/lightbox.min.css">
     <link rel="stylesheet" href="style.css">
@@ -11,16 +11,17 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-xs-1">
+        <div class="col-xs-12 col-sm-2 col-md-1 nav-wrapper">
+            <div class="logo visible-xs"></div>
             <div class="nav" id="home-link">home</div>
             <div class="nav" id="art-link">arts</div>
             <div class="nav" id="art-music">music</div>
             <div class="nav" id="about-link">about</div>
         </div>
-        <div class="col-xs-11">
+        <div class="col-xs-12 col-sm-10 col-md-11">
             <div class="row">
-                <div class="col-xs-12 logo-wrapper">
-                    <div class="logo" id="logo"></div>
+                <div class="col-xs-12  hidden-xs logo-wrapper">
+                    <div class="logo"></div>
                 </div>
             </div>
             <div class="row">
@@ -37,7 +38,7 @@
 
                         <p>Я взяла название NEDUMAYU, просто чтобы поменьше думать. Я надеялась, что искусство поможет
                             мне остановить поток мыслей. Пока не помогает. Но я не хочу об этом думать.</p><br>
-                        <img src="img022.jpg">
+                        <img src="img022.jpg" class="img022">
                     </div>
                 </div>
             </div>
@@ -51,7 +52,7 @@
 </div>
 <script src="lib/jquery-2.2.0.js"></script>
 <script>
-    $("#logo, #home-link").on("click", function () {
+    $(".logo, #home-link").on("click", function () {
         $("#main-container").load("home.html");
     });
 
