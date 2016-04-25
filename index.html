@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>NEDUMAYU</title>
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="lib/bootstrap-3.3.5-dist/css/bootstrap.css">
     <link rel="stylesheet" href="lib/lightbox/css/lightbox.min.css">
     <link rel="stylesheet" href="style.css">
@@ -45,28 +45,44 @@
 
         </div>
     </div>
-
-    <div class="row">
-        <div class="footer col-xs-12 text-center">alice surg. 2016</div>
+</div>
+<div class="footer">
+    <div class="f-text"> alice surg. 2016
     </div>
 </div>
 <script src="lib/jquery-2.2.0.js"></script>
+<script src="lib/lightbox/js/lightbox-plus-jquery.min.js"></script>
 <script>
+    lightboxInit = false;
+    var activePage = "#home-link";
+    $("#home-link").addClass("nav-active");
+
     $(".logo, #home-link").on("click", function () {
         $("#main-container").load("home.html");
+        setActive("#home-link");
     });
 
     $("#art-link").on("click", function () {
-        $("#main-container").load("gallery2.html");
+        $("#main-container").load("gallery.html");
+        setActive("#art-link");
     });
 
     $("#about-link").on("click", function () {
-        $("#main-container").load("about2.html");
+        $("#main-container").load("about.html");
+        setActive("#about-link");
     });
 
     $("#art-music").on("click", function () {
-        $("#main-container").load("music2.html");
+        $("#main-container").load("music.html");
+        setActive("#art-music");
+
     });
+
+    function setActive(item) {
+        $(activePage).removeClass("nav-active");
+        $(item).addClass("nav-active");
+        activePage = item;
+    }
 </script>
 </body>
 </html>

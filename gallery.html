@@ -108,11 +108,14 @@
     </div>
 </div>
 
-<script src="lib/lightbox/js/lightbox-plus-jquery.min.js"></script>
 <script>
-    lightbox.option({
-        'resizeDuration': 200,
-        'wrapAround': true
-    });
+    if(!lightboxInit) {
+        console.log("lightbox init");
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true
+        });
+        lightboxInit = true;
+    }
 </script>
 

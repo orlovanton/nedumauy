@@ -1,19 +1,12 @@
 body {
     background-image: url(img/wall_middle.jpg);
     background-size: 100%;
-    min-height: 800px;
 }
 
-.container-fluid{
-    background-image: url(img/wall_top.jpg),
-    url(img/wall_bottom.jpg);
-    background-repeat: no-repeat, no-repeat;
-    background-position: left top, left bottom;
-    background-size: 100%, 100%;
-}
-
-#main-container {
-    min-height: 700px;
+.container-fluid {
+    background-image: url(img/wall_top.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .logo-wrapper {
@@ -28,7 +21,6 @@ body {
     cursor: pointer;
     margin-bottom: 10px;
 }
-
 
 .nav {
     display: inline-block;
@@ -46,7 +38,11 @@ body {
     font-family: 'Impact';
 }
 
-.nav-wrapper{
+.nav-active{
+    background-color: darkcyan;
+}
+
+.nav-wrapper {
     margin: 10px;
 }
 
@@ -60,10 +56,11 @@ body {
         margin: 0;
     }
 
-    .logo{
+    .logo {
         float: right;
     }
-    .nav{
+
+    .nav {
         display: block;
     }
 }
@@ -73,29 +70,26 @@ body {
     color: black;
 }
 
-
-
 .about {
     max-width: 800px;
     height: auto;
     position: relative;
-    /*margin: 50px auto;*/
-    margin: 0 auto;
+    margin: 0px auto 10px auto;
     color: white;
     background-color: rgba(0, 0, 0, 0.3);
     padding: 20px;
 }
-.img022{
+
+.img022 {
     width: 100%;
 }
 
 .gallery a {
     display: block;
-    height: 300px;
 }
 
 .gallery img {
-    width: 300px;
+    width: 80%;
     margin: 40px auto;
     display: block;
 }
@@ -114,13 +108,22 @@ ul div {
 }
 
 .footer {
+    background: #000000 url(img/wall_bottom.jpg) no-repeat;
+    background-position: top;
+    background-size: 100%;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    padding-top: 80px;
+}
+
+.f-text {
     width: 100%;
     height: 40px;
-    background-color: black;
+    background-color: #000;
     color: white;
+    text-align: center;
+    padding: 10px;
     font-size: 10px;
     font-family: 'Impact';
-    line-height: 40px;
-    padding-left: 20px;
-    margin-top: 50px;
 }
