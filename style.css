@@ -16,12 +16,14 @@ body {
 .logo {
     width: 198px;
     height: 43px;
-    float: right;
     background: url('gallery_pictures/logo4.png') no-repeat;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
+
 .nav {
+    display: inline-block;
     height: 80px;
     width: 80px;
     font-size: 20px;
@@ -36,24 +38,47 @@ body {
     font-family: 'Impact';
 }
 
+.nav-wrapper{
+    margin: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .container-fluid {
+        padding-left: 0;
+    }
+
+    .nav-wrapper {
+        margin: 0;
+    }
+
+    .logo{
+        float: right;
+    }
+    .nav{
+        display: block;
+    }
+}
+
 .nav:hover {
     background-color: white;
     color: black;
 }
 
-.container-fluid {
-    padding-left: 0;
-}
+
 
 .about {
-    width: 800px;
+    max-width: 800px;
     height: auto;
-    font-size: 50;
     position: relative;
-    margin: 50px auto;
+    /*margin: 50px auto;*/
+    margin: 0 auto;
     color: white;
     background-color: rgba(0, 0, 0, 0.3);
     padding: 20px;
+}
+.img022{
+    width: 100%;
 }
 
 .gallery a {
