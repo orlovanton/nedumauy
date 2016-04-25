@@ -1,7 +1,15 @@
 body {
-    background: url(gallery_pictures/wall.jpg) no-repeat;
+    background-image: url(gallery_pictures/img/wall_middle.jpg);
+    background-size: 100%;
     min-height: 800px;
-    background-size: 100% 100%;
+}
+
+.container-fluid{
+    background-image: url(gallery_pictures/img/wall_top.jpg),
+    url(gallery_pictures/img/wall_bottom.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, left bottom;
+    background-size: 100%, 100%;
 }
 
 #main-container {
