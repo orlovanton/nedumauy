@@ -1,12 +1,12 @@
 body {
-    background-image: url(gallery_pictures/img/wall_middle.jpg);
+    background-image: url(img/wall_middle.jpg);
     background-size: 100%;
     min-height: 800px;
 }
 
 .container-fluid{
-    background-image: url(gallery_pictures/img/wall_top.jpg),
-    url(gallery_pictures/img/wall_bottom.jpg);
+    background-image: url(img/wall_top.jpg),
+    url(img/wall_bottom.jpg);
     background-repeat: no-repeat, no-repeat;
     background-position: left top, left bottom;
     background-size: 100%, 100%;
@@ -24,7 +24,7 @@ body {
 .logo {
     width: 198px;
     height: 43px;
-    background: url('gallery_pictures/logo4.png') no-repeat;
+    background: url('img/logo.png') no-repeat;
     cursor: pointer;
     margin-bottom: 10px;
 }
